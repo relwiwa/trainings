@@ -1,5 +1,12 @@
-const Index = () => (
-    <div>Hello Next.js</div>
-);
+import Link from "next/link";
 
-export default Index;
+export default function Index() {
+    return (
+        <div>
+            <Link href="/about">
+                <a title="About Page">About Page</a>
+            </Link>
+            <p>Hello Next.js</p>
+        </div>
+    );
+}
