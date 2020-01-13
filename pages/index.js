@@ -2,10 +2,10 @@ import Link from "next/link";
 
 import MyLayout from "../components/MyLayout";
 
-const PostLink = ({ title }) => (
+const PostLink = ({ id }) => (
     <li>
-        <Link href={`/post?title=${title}`}>
-            <a>{title}</a>
+        <Link href={`/p/[id]`} as={`/p/${id}`}>
+            <a>{id}</a>
         </Link>
     </li>
 );
@@ -16,9 +16,9 @@ export default function Index() {
             <MyLayout>
                 <h1>My Blog</h1>
                 <ul>
-                    <PostLink title="Hello Next.js" />
-                    <PostLink title="Learn Next.js is awesome" />
-                    <PostLink title="Deploy apps with Zeit" />
+                    <PostLink id="Hello Next.js" />
+                    <PostLink id="Learn Next.js is awesome" />
+                    <PostLink id="Deploy apps with Zeit" />
                 </ul>
             </MyLayout>
         </div>
