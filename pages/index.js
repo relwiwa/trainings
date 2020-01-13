@@ -1,12 +1,11 @@
-import Link from "next/link";
+import MyLayout from "../comp/MyLayout";
 
 export default function Index() {
     return (
         <div>
-            <Link href="/about">
-                <a title="About Page">About Page</a>
-            </Link>
-            <p>Hello Next.js</p>
+            <MyLayout>
+                <p>Hello Next.js</p>
+            </MyLayout>
         </div>
     );
 }

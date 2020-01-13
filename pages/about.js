@@ -1,7 +1,11 @@
+import MyLayout from "../comp/MyLayout";
+
 export default function About() {
     return (
         <div>
-            <p>This is the about page</p>
+            <MyLayout>
+                <p>This is the about page</p>
+            </MyLayout>
         </div>
     );
 }
