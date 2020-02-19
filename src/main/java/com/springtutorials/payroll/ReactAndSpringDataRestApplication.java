@@ -1,13 +1,13 @@
-package com.springtutorials.reactandspringrest;
+package com.springtutorials.payroll;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ReactAndSpringRestApplication {
+public class ReactAndSpringDataRestApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ReactAndSpringRestApplication.class, args);
+		SpringApplication.run(ReactAndSpringDataRestApplication.class, args);
 	}
 
 }
